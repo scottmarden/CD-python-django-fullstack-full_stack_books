@@ -17,10 +17,10 @@
 					</tr>
 					{% for book in books %}
 					<tr>
-						<td>{{ id }}</td>
-						<td>{{ title }}</td>
-						<td>{{ author }}</td>
-						<td>{{ category }}</td>
+						<td>{{ book.id }}</td>
+						<td>{{ book.title }}</td>
+						<td>{{ book.author }}</td>
+						<td>{{ book.category }}</td>
 					</tr>
 					{% endfor %}
 				</table>
@@ -34,6 +34,7 @@
 						Title: <input type="text" name="title" />
 						Category: <input type="text" name="category" />
 						Author: <input type="text" name="author" />
+						<input type="submit" value="Add Book" />
 					</form>
 				</fieldset>
 			</div>
